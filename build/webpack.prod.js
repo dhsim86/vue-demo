@@ -16,7 +16,7 @@ module.exports = merge(webpackBaseConfig, {
 	output: {
 		path: path.resolve(__dirname, "../dist"),
 		filename: "[name].[contenthash:8].js",
-		publicPath: "/res"
+		publicPath: "./"
 	},
 	performance: {
 		hints: "warning"

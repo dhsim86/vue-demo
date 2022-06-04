@@ -6,13 +6,9 @@
 				"modules": false,
 				"debug": true,
 				"targets": {
-					"browsers": ["> 0.25%", "last 2 versions", "not dead"]
+					"browsers": ["> 0.25%", "last 2 versions", "not dead", "ie >= 11"]
 				},
-				"corejs": { 
-					"version": 3.6, 
-					"proposals": true 
-				},
-				"useBuiltIns": "usage"
+				"useBuiltIns": false
 			}
 		]
 	],
@@ -22,7 +18,11 @@
 			{
 				"absoluteRuntime": false,
 				"helpers": true,
-				"regenerator": true
+				"regenerator": true,
+				"corejs": {
+					"version": 3,
+					"proposals": true
+				}
 			}
 		],
 		["@babel/plugin-syntax-dynamic-import"],

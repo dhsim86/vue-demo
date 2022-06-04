@@ -1,21 +1,15 @@
 <template>
 	<div>
-		<navigation></navigation>
+		<p>test</p>
 		<div class="container-fluid">
-			<div class="row">
-				<sidebar></sidebar>
-				<router-view></router-view>
-			</div>
+			<div class="row"></div>
 		</div>
 	</div>
 </template>
 <script>
-
 export default {
-	components: {
-	}
+	components: {}
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
