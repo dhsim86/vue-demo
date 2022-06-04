@@ -1,0 +1,39 @@
+{
+	"presets": [
+		[
+			"@babel/preset-env",
+			{
+				"modules": false,
+				"debug": true,
+				"targets": {
+					"browsers": ["> 0.25%", "last 2 versions", "not dead"]
+				},
+				"corejs": { 
+					"version": 3.6, 
+					"proposals": true 
+				},
+				"useBuiltIns": "usage"
+			}
+		]
+	],
+	"plugins": [
+		[
+			"@babel/plugin-transform-runtime",
+			{
+				"absoluteRuntime": false,
+				"helpers": true,
+				"regenerator": true
+			}
+		],
+		["@babel/plugin-syntax-dynamic-import"],
+		["@babel/plugin-proposal-class-properties"],
+		["@babel/plugin-proposal-private-methods"],
+		[
+			"babel-plugin-root-import",
+			{
+				"rootPathSuffix": "./src",
+				"rootPathPrefix": "@"
+			}
+		]
+	]
+}

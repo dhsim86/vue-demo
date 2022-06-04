@@ -1,0 +1,61 @@
+{
+    "name": "cerberus-admin",
+    "version": "1.0.0",
+    "description": "cerberus-admin web",
+    "private": true,
+    "sideEffects": [
+      "*.css",
+      "*.vue"
+    ],
+    "scripts": {},
+    "dependencies": {
+      "@babel/runtime-corejs3": "^7.18.3",  // polyfill anti-pollution
+      "axios": "~0.27.2",
+      "core-js": "~3.22.8",                 // use core-js
+      "lodash-es": "~4.17.21",
+      "rxjs": "~6.6.7",
+      "vee-validate": "~4.5.11",
+      "vue": "~3.2.36",
+      "vue-router": "~4.0.15",
+      "vue-rx": "~6.2.0"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.18.2",
+      "@babel/eslint-parser": "^7.18.2",
+      "@babel/plugin-syntax-dynamic-import": "^7.8.3",  // for dynamic import
+      "@babel/plugin-transform-runtime": "^7.18.2",   // polyfill anti-pollution
+      "@babel/preset-env": "^7.18.2",
+      "autoprefixer": "^10.4.7",    // vendor prefix for postcss
+      "babel-loader": "^8.2.5",
+      "babel-plugin-lodash": "^3.3.4",  // A simple transform to cherry-pick Lodash modules so you don’t have to.
+      "babel-plugin-root-import": "^6.6.0", // Babel plugin to add the opportunity to use import and require with root based paths.
+      "clean-webpack-plugin": "^4.0.0",   // A webpack plugin to remove/clean your build folder(s).
+      "css-loader": "^6.7.1",
+      "css-minimizer-webpack-plugin": "^4.0.0", // uses cssnano to optimize and minify your CSS.
+      "eslint": "^8.0.1",
+      "eslint-config-naver": "^2.1.0",    // naver coding convention
+      "eslint-config-prettier": "^8.5.0", // Turns off all rules that are unnecessary or might conflict with Prettier.
+      "eslint-plugin-import": "^2.25.2",  // support linting of ES2015+ (ES6+) import/export syntax
+      "eslint-plugin-prettier": "^4.0.0",
+      "eslint-plugin-promise": "^6.0.0",  // Enforce best practices for JavaScript promises.
+      "eslint-plugin-vue": "^9.1.0",      // Official ESLint plugin for Vue.js (https://vuejs-kr.github.io/vue/eslint/2017/12/03/eslint-plugin-vue/)
+      "file-loader": "^6.2.0",            // resolves import/require() on a file into a url and emits the file into the output directory.
+      "html-webpack-plugin": "^5.5.0",    // Plugin that simplifies creation of HTML files to serve your bundles
+      "lodash-webpack-plugin": "^0.11.6", // for remove unused lodash codes
+      "mini-css-extract-plugin": "^2.6.0",
+      "moment-locales-webpack-plugin": "^1.2.0", // Strip unused locales from Moment.js
+      "postcss": "^8.4.14",               // for autoprefixer
+      "postcss-loader": "^7.0.0",
+      "prettier": "^2.6.2",
+      "terser-webpack-plugin": "^5.3.3",      // uses terser to minify/minimize your JavaScript.
+      "url-loader": "^4.1.1",             // A loader for webpack which transforms files into base64 URIs.
+      "vue-loader": "^17.0.0",
+      "vue-template-compiler": "^2.6.14",
+      "webpack": "^5.72.1",
+      "webpack-bundle-analyzer": "^4.5.0",
+      "webpack-cli": "^4.9.2",
+      "webpack-dev-server": "^4.9.1",
+      "webpack-merge": "^5.8.0"
+    }
+  }
+  
