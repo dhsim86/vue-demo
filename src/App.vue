@@ -10,18 +10,12 @@
 	</div>
 </template>
 <script>
-import Navigation from "@/components/Navigation.vue";
-import Sidebar from "@/components/Sidebar.vue";
 
 export default {
 	components: {
-		Navigation,
-		Sidebar
 	}
 };
 </script>
 
 <style scoped>
-@import "assets/bootstrap.min.css";
-@import "assets/dashboard.css";
 </style>
